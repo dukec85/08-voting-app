@@ -8,6 +8,10 @@ const sameFirst = require('array-helpers/same-first');
 const deepEquals = require('array-helpers/deep-equals');
 const arraySum = require('array-helpers/array-sum');
 
+test('free passing test', (assert) => {
+  assert.ok(true);
+});
+
 test('It can check first values', (assert) => {
   const a = sameFirst(['b', true], ['b', true]);
   const b = sameFirst(['b', true], ['b', false]);
@@ -30,10 +34,10 @@ test('It can check deep equal', (assert) => {
   const e = deepEquals(['d', true], ['d', true, 'x']);
 
   assert.equal(a, true, 'It returns true when all the values are the same in both arrays');
+  assert.equal(e, false, 'It returns false if the lengths are different');
+  assert.equal(d, false, 'It returns false when the first item is different');
   assert.equal(b, false, 'It returns false when the second item is differet');
   assert.equal(c, true, 'It returns true when all the values are the same in both arrays');
-  assert.equal(d, false, 'It returns false when ANY item is different');
-  assert.equal(e, false, 'It returns false if the lengths are different');
 });
 
 test('It can sum up an array', (assert) => {
