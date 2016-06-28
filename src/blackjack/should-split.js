@@ -1,5 +1,6 @@
 export default function shouldSplit(cardA, cardB) {
-  aceFive = shouldSplit('ace', 5); // undefined
+  if (cardA === cardB) {
+    return true;
+  }
+  else {return false};
 }
-
-aceAce = shouldSplit()
