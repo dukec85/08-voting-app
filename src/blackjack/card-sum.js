@@ -5,9 +5,9 @@ export default function cardSum(cardA, cardB) {
     return 4;
   }
 
-  const b = (cardX + cardY)
-  const cardX = 10;
-  const cardY = 20; {
+  const b = (cardA + cardB)
+  const cardA = 10;
+  const cardB = 20; {
     return 30;
   }
 
