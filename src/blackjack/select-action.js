@@ -5,11 +5,10 @@ import shouldHit from 'blackjack/should-hit';
 
 export default function selectAction(cardA, cardB) {
 
-    if (shouldHit(cardA, cardB)) {
-      return 'hit';
-    }
-    else if (shouldSplit(cardA, cardB)) {
-     return 'split';
-    }
-    return 'stay';
+  if (shouldHit(cardA, cardB)) {
+    return 'hit';
+  } else if (shouldSplit(cardA, cardB)) {
+    return 'split';
+  }
+  return 'stay';
 }
