@@ -1,6 +1,10 @@
 import calculatePercent from 'voting/calculate-percent';
-import percentVotes from 'voting/percent-votes';
+import totalVotes from 'voting/total-votes';
 
-export default function totalVotes(options, index) {
+export default function percentVotes(options, index) {
+  let x = (options[index].votes);
+  let y = (totalVotes(options));
+
+  return calculatePercent(x, y);
 
 }
