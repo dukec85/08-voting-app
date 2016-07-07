@@ -6,5 +6,4 @@ export default function percentVotes(options, index) {
   let y = (totalVotes(options));
 
   return calculatePercent(x, y);
-
 }
